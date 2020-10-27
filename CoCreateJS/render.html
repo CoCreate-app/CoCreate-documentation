@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CoCreateJS Documentation</title>
+        <title>CoCreate-render Documentation | CoCreate</title>
         <link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
         <meta name="description" content="Utility first css framework, design faster and improve on your css by using native inline styles as classes. No learning curve, use what you already know" />
         <meta name="keywords" content="helper classes, utility classes, css framework, css library, inline style classes" />
@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
         
         <!-- Codemirror -->
-        <link rel="stylesheet" href="https://server.cocreate.app/CoCreate-components/CoCreate-codemirror/src/CoCreate-codemirror.css" type="text/css" />
+        <link rel="stylesheet" href="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/src/CoCreate-codemirror.css" type="text/css" />
         <link rel=stylesheet href="https://codemirror.net/lib/codemirror.css"  async defer>
 
         <!-- Highlight.js-->
@@ -69,30 +69,16 @@
 				        		<h4><span>data-fetch_collection</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge danger">required</span></h4>
 			        			<p>Collection name to fetch data. It is required. </p>
 							</li>
-							<!--<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">-->
-				   <!--     		<h4><span>data-fetch_collection_list</span> <span class="cocreate-badge success">boolean</span> <span class="cocreate-badge warning">ooptional</span></h4>-->
-			    <!--    			<p>Once whole collection list fetch, this attribute used. If data-fetch_collection_list="true", whole collection list fetch.</p>-->
-			    <!--    			<p>This case, all attributes will be ignored (fetch, filter and order)</p>-->
-							<!--</li>-->
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>data-fetch_name</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Collections's field to fetch data. This value will use </p>
-							</li>
-							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
-				        		<h4><span>data-fetch_value</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Collections's filed value to fetch data. If data-fetch_name defined, this attribute should be define too</p>
-			        			<p>The data-fetch_name and data-fetch_value are related with operator's fetch in readDocumentList</p>
+			        			<p>Define the field name to fetch array</p>
+			        			<p>If this value defined, it will fetch the special field's value</p>
 							</li>
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>data-fetch_value_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
-			        			<p>Save data onChange. If attribute is empty or not used Default's to true.</p>
-			        			<p>string  | collection</p>
+			        			<p>collection</p>
 			        			<p>colleciton: whole collections list fetch.</p>
 							</li>
-							<!--<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">-->
-				   <!--     		<h4><span>data-fetch_operator data-search_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>-->
-			    <!--    			<p>Fetch value on page load or when updated. If attribute is empty or not used Default's to true.</p>-->
-							<!--</li>-->
 							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
 				        		<h4><span>data-fetch_count</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Fetch the item's count on page load or when updated. If attribute is empty or not used, total items will be fetch.</p>
@@ -105,6 +91,11 @@
 				        		<h4><span>data-order_type</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
 			        			<p>Available value: asc | desc.</p>
 			        			<p>Fetch order value on page load or when updated. If attribute is empty or not used Default's to asc.</p>
+							</li>
+							<li class="padding:15px_0px border-bottom:1px_solid_lightgrey">
+				        		<h4><span>data-render_array</span> <span class="cocreate-badge success">string</span> <span class="cocreate-badge warning">optional</span></h4>
+			        			<p>This value should define in template. </p>
+			        			<p>Define the name of object to fetch the array</p>
 							</li>
                     </ul>
                 </div>
@@ -377,7 +368,7 @@
         </script>
     
         <!--CoCreateJS-->
-        <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+        <script src="https://cdn.cocreate.app/CoCreate.min.js"></script>
         
          <!-- CoCreate CodeMiirror -->
         <script type="text/javascript" src="https://server.cocreate.app/CoCreate-plugins/CoCreate-codemirror/dist/CoCreate-codemirror.js" async></script>
